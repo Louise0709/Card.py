@@ -28,6 +28,3 @@ while 1:
 	        	package.sort
 			for i in package:
 				print(i)
-		
-		
-
