@@ -1,36 +1,33 @@
-import time
 import random
 card_turple=('Spiderman','Ironman','Loki','Thor','Cap')
-package={}
-weight=(5,10,50,50,100)
-compare=(15,35,115,215))
+package=[]
 while 1:	
-	choice=int(input('1.draw a card\n 2.look into the bag\n 3.leave.\n Which number do you choose?'))
+	choice=int(input('1.draw a card\n 2.look into the bag\n 3.arrange the bag.4.leave\n Which number do you choose?'))
 
 	if choice ==1:
 		num =int(input('how many times?'))
 		for i in range(0,num):
-			n= random.randint(1,weight[-1])
-			i=0
-			while n>compare:
-				i=i+1
-			print('you got{}'.format(card_turple[i]))
-			if package.contains[card_turple[i]]:
-				package[card_turple[i]] +=1
-			else:
-				packge[card_turple[i]] =1	
+			n= random.randint(0,5)
+			packge.append(card_turple[n])
+			print('you got{}'.format(card_turple[n]))	
 			print('put {} in in the bag already'.format(card_turple[i]))
-			print('--------------------') 
-			time.sleep(0.3)		
+			print('--------------------') 		
 	if choice ==2:
 		if  len(packge)==0:
 			print('nothing here')
 			print('--------------------')
 			
 		else:
-			for key,value in package.items:
-				print('{}, number{}'.format(key,value))
+			for i in package:
+				print(i)
 				print('--------------------')
 	if choice==3:
-		break	
+		if len(package)==0:
+			print('nothing here'0
+		else:
+	        	package.sort
+			for i in package:
+				print(i)
+		
+		
 
